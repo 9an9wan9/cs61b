@@ -6,6 +6,15 @@ public class LeapYear {
     /** Calls isLeapYear to print correct statement.
      *  @param  year to be analyzed
      */
+    /** Determine the year inputed whether times of 4. */
+    public static boolean isLeapYear(int year) {
+       if ((year % 4) == 0){
+           return true;
+       } else {
+               return false;
+       }
+    }
+    
     private static void checkLeapYear(int year) {
         if (isLeapYear(year)) {
             System.out.printf("%d is a leap year.\n", year);
